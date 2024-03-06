@@ -6,9 +6,15 @@ grant all privileges on employee.* to ohgiraffers@'%';
 -- 권한 부여 확인
 show grants for ohgiraffers@'%';
 
+
+-- ohgiraffers 계정에서
+-- 처음 실행할 때 Use employee; 해야 employee 테이블 사용가능
+USE employee;
+--
+
 -- employee 테이블
 
-USE employee;
+
 
 #DROP TABLE `EMPLOYEE`;
 #DROP TABLE `DEPARTMENT`;
